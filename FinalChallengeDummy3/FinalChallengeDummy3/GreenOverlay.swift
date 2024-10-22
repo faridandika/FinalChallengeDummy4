@@ -8,23 +8,23 @@
 import SwiftUI
 
 struct GreenOverlay: View {
-    var overlayColor: Color // Add a parameter to accept color
+    var overlayColor: Color
 
     var body: some View {
         ZStack {
-            // Outer frame
             RoundedRectangle(cornerRadius: 0)
-                .stroke(overlayColor, lineWidth: 5) // Use the passed color
-                .frame(width: 250, height: 250) // Outer frame size
+                .stroke(overlayColor, lineWidth: 5)
+                .frame(width: 220, height: 220)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity) // Make sure it covers the screen
-        .edgesIgnoringSafeArea(.all) // Ensure it takes up the full screen if necessary
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
 struct GreenOverlay_Previews: PreviewProvider {
     static var previews: some View {
-        GreenOverlay(overlayColor: .green) // Example preview with green
+        GreenOverlay(overlayColor: .green)
     }
 }
+
 
