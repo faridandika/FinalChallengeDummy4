@@ -26,5 +26,3 @@ struct GreenOverlay_Previews: PreviewProvider {
         GreenOverlay(overlayColor: .green)
     }
 }
-
-
